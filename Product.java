@@ -1,18 +1,18 @@
 import java.io.*;
 public class Product {
-    BufferedReader r= new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
     int pcode;
     String pname;
     double price;
     
-    void getData() 
+    void getData() throws IOException 
     {
         System.out.println("Enter pcode :");
-        pcode=Integer.parseInt(r.readLine());
+        pcode=Integer.parseInt(br.readLine());
         System.out.println("Enter pname :");
-        pname=r.readLine();
+        pname=br.readLine();
         System.out.println("Enter price:");
-        price=Double.parseDouble(r.readLine());
+        price=Double.parseDouble(br.readLine());
     }
     void showData()
     {
